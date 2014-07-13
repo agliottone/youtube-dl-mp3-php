@@ -34,23 +34,23 @@ return data will be a json object with a assolute url of mp3
 Make  JSONP request, if you use jQuery:
 
     $.ajax({
-    url: "http://yoursite.com/mp3/download.php",
- 
-    jsonp: "callback",
- 
-    dataType: "jsonp",
- 
-    data: {
-        id: "34s_cIuHWB4",
-        name: "mmysong.mp3"
-    },
- 
-    // work with the response
-    success: function( data ) {
-        if(data.link) alert(data.link);
-        if(data.errori) console.log(data.errori);
-    }
-});
+        url: "http://yoursite.com/mp3/download.php",
+     
+        jsonp: "callback",
+     
+        dataType: "jsonp",
+     
+        data: {
+            id: "34s_cIuHWB4",
+            name: "mmysong.mp3"
+        },
+     
+        // work with the response
+        success: function( data ) {
+            if(data.link) alert(data.link);
+            if(data.errori) console.log(data.errori);
+        }
+    });
 
 Now you can redirect the page to  "data.link", set:
 
